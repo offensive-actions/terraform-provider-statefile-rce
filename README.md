@@ -21,15 +21,16 @@ To use the provider stand alone, just declare this:
 ``` hcl
 terraform {
   required_providers {
-    example = {
-      source = "example.com/local/example"
-      version = "0.1.0"
+    rce = {
+      source = "offensive-actions/statefile-rce"
     }
   }
 }
 
-resource "rce" "<arbitrary_name>" {
-  command = "<command_to_run>"
+provider "rce" {}
+
+resource "rce" "command" {
+  command = "id"
 }
 ```
 
