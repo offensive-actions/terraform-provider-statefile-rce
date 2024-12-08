@@ -168,3 +168,7 @@ resource "rce" "command" {
 Then, after a pipeline run, and when running `id`, this is the resulting state file - note the result of the `id` command in the `resources.instances.attributes.output`:
 
 ![Output in state file](resources/demo11.png)
+
+## Outro
+
+I would love constructive criticism and pull requests to enhance this. There were several design decisions that made sense at the time of writing, but might not the best ones. Also, the code is AI fuled and there are not tests, obviously YOLO.
